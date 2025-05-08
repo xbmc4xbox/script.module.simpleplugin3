@@ -107,8 +107,7 @@ def py2_decode(s, encoding='utf-8'):
     return s
 
 def _kodi_major_version():
-    kodi_version = xbmc.getInfoLabel('System.BuildVersion').split(' ')[0]
-    return kodi_version.split('.')[0]
+    return '17'
 
 def translate_path(*args, **kwargs):
     if _kodi_major_version() < '19':
